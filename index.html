@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Internetové aplikace - 3. úkol</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div>
+        <h1>Registrační formulář </h1>
+        <form>
+            <table>
+                <tr>
+                    <td class="label">Jméno:</td>
+                    <td><input type="text" id="data1" class="text-data" placeholder="Jan"></td>
+                </tr>
+                <tr>
+                    <td class="label">Příjmení:</td>
+                    <td><input type="text" id="data2" class="text-data" placeholder="Novák"></td>
+                </tr>
+                <tr>
+                    <td class="label">Pohlaví:</td>
+                    <td>
+                        <input type="radio" class="radio-data" id="radio-data1" name="gender" value="Muž">
+                        <label id="label1">Muž</label>
+                        <input type="radio" class="radio-data" id="radio-data2" name="gender" value="Žena">
+                        <label id="label2">Žena</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Email:</td>
+                    <td><input type="email" id="data3" class="text-data" placeholder="jan.novak@seznam.cz"></td>
+                </tr>
+                <tr>
+                    <td class="label">Telefon:</td>
+                    <td>
+                        <select id="code">
+                            <option>+420</option>
+                            <option>+421</option>
+                        </select>
+                        <input type="phone" id="data4" class="text-data" placeholder="769654666">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">Destinace:</td>
+                    <td><input type="text" id="data5" class="text-data" placeholder="Itálie, Řím"></td>
+                </tr>
+                <tr>
+                    <td class="label">Od:</td>
+                    <td><input type="date" class="date" id="date1"></td>
+                </tr>
+                <tr>
+                    <td class="label">Do:</td>
+                    <td><input type="date" class="date" id="date2"></td>
+                </tr>
+            </table>
+        </form>
+        <button id="button-submit" onclick="submit()">Potvrdit</button>
+        <button id="button-edit" onclick="edit()">Editovat</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
